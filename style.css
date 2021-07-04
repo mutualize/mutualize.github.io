@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #161032;
+  color: #fff;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: #ffc53a;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.centred-text {
+  text-align: center;
+}
+
+body > *,
+section > *,
+footer > * {
+  width: 100%;
+}
+
+section,
+footer {
+  padding: 2rem;
+}
+
+body > header {
+  max-width: 1400px;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+tbody:nth-child(2n),
+thead:nth-child(2n) {
+  background: #161032;
+}
+
+section:nth-of-type(2n + 1),
+tbody:nth-child(2n + 1),
+thead:nth-child(2n + 1) {
+  background: #20194c;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+section > *,
+footer > * {
+  max-width: 1100px;
+}
+
+section header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+section header,
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+section,
+footer,
+.logo-full,
+body > header {
+  display: flex;
+  justify-content: center;
+}
+
+body > header {
+  align-items: center;
+}
+
+body > header > * {
+  padding: 0.2rem;
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+footer > * {
+  display: flex;
+  flex-direction: row;
+}
+
+body > header > *:nth-child(1),
+footer > * > *:nth-child(1) {
+  flex: 1;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.links > * {
+  flex-basis: 50%;
+  flex-grow: 1;
+  padding: 0.2rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid > * {
+  width: auto;
+  flex-shrink: 1;
+  flex-basis: 30%;
+  margin: 0.2rem;
+}
+
+.colour-swatch {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border: 2px solid #aaa;
+}
